@@ -1,4 +1,9 @@
+import java.util.Random;
+
 public class BasicArtimeticOperations {
+
+    /*Random numeroRandomUno = new Random();
+    Random numeroRandomDos = new Random();*/
 
     //variables privadas de los 2 números
     private int firstNumber;
@@ -65,6 +70,18 @@ public class BasicArtimeticOperations {
     int modulo() {
         System.out.print("Módulo de " + this.firstNumber + " % " + this.secondNumber + " = ");
         return firstNumber % secondNumber;
+    }
+
+    //metodo de aletorio
+    //este metodo selecciona 2 numeros aleatorios del 0 al 100 y los suma
+    int randomOperation() {
+        Random randomNumberOne = new Random();
+        Random randomNumberTwo = new Random();
+        int numberOne = randomNumberTwo.nextInt(100);
+        int numberTwo = randomNumberTwo.nextInt(100);
+
+        System.out.print("Suma de " + numberOne + " + " + numberTwo + " = ");
+        return numberOne + numberTwo;
     }
 
 }
