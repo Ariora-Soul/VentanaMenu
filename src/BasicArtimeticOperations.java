@@ -39,35 +39,35 @@ public class BasicArtimeticOperations {
 
     @Override
     public String toString() {
-        return String.format("Los valores son: %d y %d",this.firstNumber,this.secondNumber);
+        return String.format("Los valores a operar son: %d y %d\n",this.firstNumber,this.secondNumber);
     }
 
     //metodo de suma
-    int sum() {
+    public int sum() {
         System.out.print("Suma de " + this.firstNumber + " + " + this.secondNumber + " = ");
         return firstNumber + secondNumber;
     }
 
     //metodo de resta
-    int sustrac() {
+    public int sustrac() {
         System.out.print("Resta de " + this.firstNumber + " - " + this.secondNumber + " = ");
         return firstNumber - secondNumber;
     }
 
     //metodo de multiplicacion
-    int multiply() {
+    public int multiply() {
         System.out.print("Multiplicación de " + this.firstNumber + " * " + this.secondNumber + " = ");
         return firstNumber * secondNumber;
     }
 
     //metodo de division
-    int division() {
+    public int division() {
         System.out.print("División de " + this.firstNumber + " / " + this.secondNumber + " = ");
         return firstNumber / secondNumber;
     }
 
     //metodo de modulo
-    int modulo() {
+    public int modulo() {
         System.out.print("Módulo de " + this.firstNumber + " % " + this.secondNumber + " = ");
         return firstNumber % secondNumber;
     }
