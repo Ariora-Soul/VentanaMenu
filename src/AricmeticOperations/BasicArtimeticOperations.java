@@ -1,9 +1,7 @@
+package AricmeticOperations;
 import java.util.Random;
 
 public class BasicArtimeticOperations {
-
-    /*Random numeroRandomUno = new Random();
-    Random numeroRandomDos = new Random();*/
 
     //variables privadas de los 2 números
     private int firstNumber;
