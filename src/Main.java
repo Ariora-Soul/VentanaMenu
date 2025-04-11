@@ -14,17 +14,17 @@ public class Main {
     //Mostrar valores del objeto
     System.out.println(operation);
 
-    //while para repetir la inserción de operaciones
+    //variable para el while
+    boolean menuStay = true;
+
+    //bucle while para pedir operaciones hasta que el usuario escriba false
+    while (menuStay) {
 
     //Mostrar valores del objeto
     System.out.print("Inserte operacion 1-6: ");
 
-    //Escáner
     Scanner opcion = new Scanner(System.in);
-
-    while (opcion.nextInt() < 8) {
-
-    //Switch selección
+    //Switch de selección
         switch (opcion.nextInt()){
         case 1:
             int resultadoSuma = operation.sum();
@@ -53,6 +53,13 @@ public class Main {
         default:
             System.out.println("Esa opcion no es correcta");
     }
+
+    // creo que es posible mejorar esta implementación
+        System.out.print("¿Desea otra operación? true o false: ");
+        Scanner newOperation = new Scanner(System.in);
+        if(newOperation.nextBoolean() == false) {
+            menuStay = false;
+        }
   }
  }
 }
