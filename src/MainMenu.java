@@ -1,4 +1,6 @@
 import AricmeticOperations.AricmeticOperationsMenu;
+import GeometricFroms.GeometricFormsMenu;
+
 import java.util.Scanner;
 
 public class MainMenu {
@@ -14,16 +16,16 @@ public class MainMenu {
                     "Elija una opción: \n");
             System.out.println(
                     "1: Operaciones Aritmeticas \n" +
-                            "2: ¿¿??\n" +
+                            "2: Formas Geométricas\n" +
                             "3: Salir\n");
 
             opcion = scanner.nextInt();
             switch (opcion){
                 case 1:
-                    aricmeticOperationsMenu();
+                    AricmeticOperationsMenu.iniciar(scanner);
                     break;
                 case 2:
-                    System.out.println("Sin completar");
+                    GeometricFormsMenu.inicio(scanner);
                     break;
                 case 3:
                     System.out.println("Cerrando");

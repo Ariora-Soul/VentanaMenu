@@ -2,7 +2,7 @@ package AricmeticOperations;
 import java.util.Scanner;
 
 public class AricmeticOperationsMenu {
-    public static void arimecticOperationsMenu(){
+    public static void iniciar(Scanner scanner){
 
         /*Crea el objeto operación
          * Esto puede mejorar, para que el usuario inserte los valores.
