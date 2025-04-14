@@ -8,9 +8,9 @@ public class GeometricForms {
 
         int x = 5;
         int ancho = 5;
-        for(int i=0; i<x; i++){
+        for (int i = 0; i < x; i++) {
 
-            for(int y=0; y<ancho; y++){
+            for (int y = 0; y < ancho; y++) {
                 System.out.print("*");
             }
             System.out.println("");
@@ -21,13 +21,41 @@ public class GeometricForms {
         System.out.println("Imprimiendo un Triangulo:\n");
 
         int alto = 5;
-        int ancho = 1 ;
-        for(int y=0; y < alto; y++){
-            for(int x=0; x < ancho; x++){
+        int ancho = 1;
+        for (int y = 0; y < alto; y++) {
+            for (int x = 0; x < ancho; x++) {
                 System.out.print("*");
             }
             ancho += 1;
             System.out.println("");
         }
     }
-}
+
+    public static void triangleSuperior(Scanner scanner) {
+        System.out.println("Imprimiendo un Triangulo:\n");
+
+        int alto = 5;
+        int ancho = 1;
+        for (int y = 0; y < alto; y++) {
+            for (int x = 5; x >= ancho; x--) {
+                System.out.print("*");
+            }
+            ancho += 1;
+            System.out.println("");
+        }
+    }
+
+    public static void rectangle(Scanner scanner) {
+        System.out.println("Imprimiendo un Rectángulo:\n");
+
+        int alto = 5;
+        int ancho = 10;
+        for(int y = 0;y < alto; y++){
+            for (int x = 0;x < ancho; x++){
+                System.out.print("*");
+                }
+            System.out.println("");
+            }
+        }
+    }
+
