@@ -57,5 +57,28 @@ public class GeometricForms {
             System.out.println("");
             }
         }
+
+    public static void trianguloEquilatero(Scanner scanner) {
+
+
+        System.out.println("Imprimiendo un Triángulo Equilátero:\n");
+
+        int filas = 5;
+
+        //Código para las filas
+        for(int y = 0; y < filas; y++){
+
+            //espacios
+            for (int espacios = 0; espacios < filas - y - 1 ;espacios++){
+                System.out.print(" ");
+            }
+
+            //asteriscos
+            for (int asteriscos = 0; asteriscos < (2 * y + 1); asteriscos++){
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
     }
+}
 

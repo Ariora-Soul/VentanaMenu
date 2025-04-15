@@ -7,13 +7,13 @@ public class GeometricFormsMenu {
 
         System.out.println("\nMENU");
         System.out.println("Seleccione la operación que desee realizar: \n");
-        System.out.println("1: Cuadrado \n2: Triangulo\n3: Triangulo Superior\n4: Rectángulo\n");
+        System.out.println("1: Cuadrado \n2: Triangulo\n3: Triangulo Superior\n4: Rectángulo\n5: Triángulo Equilátero");
 
 
         boolean menuStay = true;
         while (menuStay) {
 
-            System.out.print("Inserte operacion 1-3: ");
+            System.out.print("Inserte operacion 1-5: ");
 
             Scanner opcion = new Scanner(System.in);
 
@@ -29,6 +29,9 @@ public class GeometricFormsMenu {
                     break;
                 case 4:
                     GeometricForms.rectangle(scanner);
+                    break;
+                case 5:
+                    GeometricForms.trianguloEquilatero(scanner);
                     break;
                 default:
                     System.out.println("Esa opcion no es correcta");
