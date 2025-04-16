@@ -6,14 +6,20 @@ public class GeometricForms {
     public static void square(Scanner scanner) {
         System.out.println("Imprimiendo un cuadrado:\n");
 
-        int x = 5;
-        int ancho = 5;
-        for (int i = 0; i < x; i++) {
+        System.out.print("¿Cuantas filas de alto quieres?: ");
+        int x = scanner.nextInt();
 
-            for (int y = 0; y < ancho; y++) {
-                System.out.print("*");
+        if(x < 2) {
+            System.out.println("No es posible hacer un cuadrado menor a 2 filas!");
+        } else {
+
+            for (int i = 0; i < x; i++) {
+
+                for (int y = 0; y < x; y++) {
+                    System.out.print("*");
+                }
+                System.out.println("");
             }
-            System.out.println("");
         }
     }
 

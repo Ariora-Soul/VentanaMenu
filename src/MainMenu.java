@@ -19,6 +19,8 @@ public class MainMenu {
                             "2: Formas Geométricas\n" +
                             "3: Salir\n");
 
+            System.out.print("" +
+                    "Seleccione del 1 al 3: ");
             opcion = scanner.nextInt();
             switch (opcion){
                 case 1:

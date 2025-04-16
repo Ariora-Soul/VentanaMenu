@@ -1,5 +1,4 @@
 package GeometricFroms;
-
 import java.util.Scanner;
 
 public class GeometricFormsMenu {
