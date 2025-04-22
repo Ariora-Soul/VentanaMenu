@@ -3,15 +3,14 @@ import java.util.Scanner;
 
 public class AricmeticOperationsMenu {
     public static void iniciar(Scanner scanner){
-
         /*Crea el objeto operación
          * Esto puede mejorar, para que el usuario inserte los valores.
          * */
         BasicArtimeticOperations operation = new BasicArtimeticOperations(2,2);
 
         //Mensajes del CLI
-        System.out.println("\nMENU");
-        System.out.println("Seleccione la operación que desee realizar: \n");
+        System.out.println("\nMENU Operaciones" + "\n###############");
+        System.out.println("\nSeleccione la operación que desee realizar: \n");
         System.out.println("1: Suma \n2: Resta\n3: Multiplicación" +
                 "\n4: División\n5: Modulo\n6: Suma random\n");
 

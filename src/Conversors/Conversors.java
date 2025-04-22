@@ -4,17 +4,20 @@ import java.util.Scanner;
 
 public class Conversors {
 
-    private int temperatura;
+    Scanner askTemperature = new Scanner(System.in);
+
     // constructor por defecto de la clase
-    Conversors(int temperatura) {
-        this.temperatura = temperatura;
-    }
+    Conversors() {}
 
     public int celciusToFarenheit  () {
-        return temperatura * (9/5) + 32;
+        System.out.print("Añada un valor en Celcius a convertir: ");
+        int temperature = askTemperature.nextInt();
+        return temperature * (9/5) + 32;
     }
 
     public int farenheitToCelcius  () {
-        return ((temperatura - 32) * 5)/9;
+        System.out.print("Añada un valor en Farenheit a convertir: ");
+        int temperature = askTemperature.nextInt();
+        return ((temperature - 32) * 5)/9;
     }
 }

@@ -3,10 +3,9 @@ import java.util.Scanner;
 
 public class GeometricFormsMenu {
     public static void inicio (Scanner scanner){
-
-        System.out.println("\nMENU");
-        System.out.println("Seleccione la operación que desee realizar: \n");
-        System.out.println("1: Cuadrado \n2: Triangulo\n3: Triangulo Superior\n4: Rectángulo\n5: Triángulo Equilátero");
+        System.out.println("\nMENU Formas" + "\n###############");
+        System.out.println("\nSeleccione la forma que desee ver: \n");
+        System.out.println("1: Cuadrado \n2: Triangulo\n3: Triangulo Superior\n4: Rectángulo\n5: Triángulo Equilátero\n");
 
 
         boolean menuStay = true;

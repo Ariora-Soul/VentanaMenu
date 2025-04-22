@@ -1,48 +1,39 @@
 package Conversors;
 
-import AricmeticOperations.AricmeticOperationsMenu;
-import AricmeticOperations.BasicArtimeticOperations;
-import GeometricFroms.GeometricFormsMenu;
-
+import GeometricFroms.GeometricForms;
 import java.util.Scanner;
 
 public class ConversorsMenu {
     public static void inicio (Scanner scanner) {
-        int opcion;
-        Conversors number = new Conversors(50);
-        do {
+        System.out.println("\nMENU Conversores" + "\n###############");
+        System.out.println("\nSeleccione la conversión que desee realizar: \n");
+        System.out.println("1: De Celcius a Farenheit \n2: De Farenheit a Celcius\n");
 
-            //Opciones del menú
-            System.out.println("\n" +
-                    "MENU Conversores");
-            System.out.println("" +
-                    "Elija una opción: \n");
-            System.out.println(
-                    "1: Temperaturas \n" +
-                            "2: Distancia\n" +
-                            "3: Peso\n" +
-                            "4: Salir\n");
+        Conversors convert = new Conversors();
 
-            System.out.print("" +
-                    "Seleccione del 1 al 4: ");
-            opcion = scanner.nextInt();
-            switch (opcion){
+        boolean menuStay = true;
+        while (menuStay) {
+
+            System.out.print("Seleccione conversión 1-2: ");
+
+            Scanner opcion = new Scanner(System.in);
+
+            switch (opcion.nextInt()){
                 case 1:
-                    System.out.println(number.celciusToFarenheit());
+                    System.out.println("La conversión a Farenheit es: " + convert.celciusToFarenheit());
                     break;
                 case 2:
-                    System.out.println(number.farenheitToCelcius());
-                    break;
-                case 3:
-                    ConversorsMenu.inicio(scanner);
-                    break;
-                case 4:
-                    System.out.println("Cerrando");
+                    System.out.println("La conversión a Celcius es: " + convert.farenheitToCelcius());
                     break;
                 default:
-                    System.out.println("Opción inválida");
+                    System.out.println("Esa opcion no es correcta");
             }
 
-        } while(opcion != 3);
+            System.out.print("\n¿Desea otra conversión? true o false: ");
+            Scanner newOperation = new Scanner(System.in);
+            if(newOperation.nextBoolean() == false) {
+                menuStay = false;
+            }
+        }
     }
 }

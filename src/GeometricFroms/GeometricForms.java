@@ -4,15 +4,14 @@ import java.util.Scanner;
 
 public class GeometricForms {
     public static void square(Scanner scanner) {
-        System.out.println("Imprimiendo un cuadrado:\n");
+        System.out.print("\n¿Cuantas filas de alto quieres?: ");
 
-        System.out.print("¿Cuantas filas de alto quieres?: ");
         int x = scanner.nextInt();
 
         if(x < 2) {
             System.out.println("Introduce un número mayor a 1");
         } else {
-
+            System.out.println("\nImprimiendo un cuadrado:\n");
             for (int i = 0; i < x; i++) {
 
                 for (int y = 0; y < x; y++) {
@@ -24,14 +23,15 @@ public class GeometricForms {
     }
 
     public static void triangle(Scanner scanner) {
-        System.out.println("Imprimiendo un Triangulo:\n");
+        System.out.print("\n¿Cuantas filas de alto quieres?: ");
 
-        System.out.print("¿Cuantas filas de alto quieres?: ");
         int alto = scanner.nextInt();
         int ancho = 1;
+
         if(alto < 2) {
             System.out.println("Introduce un número mayor a 1");
         } else {
+            System.out.println("\nImprimiendo un Triangulo:\n");
             for (int y = 0; y < alto; y++) {
                 for (int x = 0; x < ancho; x++) {
                     System.out.print("*");
@@ -43,16 +43,15 @@ public class GeometricForms {
     }
 
     public static void triangleSuperior(Scanner scanner) {
-        System.out.println("Imprimiendo un Triangulo:\n");
+        System.out.print("\n¿Cuantas filas de alto quieres?: ");
 
-        System.out.print("¿Cuantas filas de alto quieres?: ");
-
-        int alto = scanner.nextInt();;
+        int alto = scanner.nextInt();
         int ancho = 1;
 
         if(alto < 2) {
             System.out.println("Introduce un número mayor a 1");
         } else {
+        System.out.println("\nImprimiendo un Triangulo Superior:\n");
         for (int y = 0; y < alto; y++) {
             for (int x = alto; x >= ancho; x--) {
                 System.out.print("*");
@@ -64,9 +63,7 @@ public class GeometricForms {
     }
 
     public static void rectangle(Scanner scanner) {
-        System.out.println("Imprimiendo un Rectángulo:\n");
-
-        System.out.print("¿Cuantas filas de alto quieres?: ");
+        System.out.print("\n¿Cuantas filas de alto quieres?: ");
 
         int alto = scanner.nextInt();
         int ancho = alto*2;
@@ -74,6 +71,7 @@ public class GeometricForms {
         if(alto < 2) {
             System.out.println("Introduce un número mayor a 1");
         } else {
+        System.out.println("\nImprimiendo un Rectángulo:\n");
         for(int y = 0;y < alto; y++){
             for (int x = 0;x < ancho; x++){
                 System.out.print("*");
@@ -84,13 +82,14 @@ public class GeometricForms {
         }
 
     public static void trianguloEquilatero(Scanner scanner) {
+        System.out.print("\n¿Cuantas filas de alto quieres?: ");
 
+        int filas = scanner.nextInt();
 
-        System.out.println("Imprimiendo un Triángulo Equilátero:\n");
-
-        int filas = 5;
-
-        //Código para las filas
+        if(filas < 2) {
+            System.out.println("Introduce un número mayor a 1");
+        } else {
+        System.out.println("\nImprimiendo un Triángulo Equilátero:\n");
         for(int y = 0; y < filas; y++){
 
             //espacios
@@ -103,6 +102,7 @@ public class GeometricForms {
                 System.out.print("*");
             }
             System.out.println("");
+        }
         }
     }
 }

@@ -12,8 +12,8 @@ public class MainMenu {
 
             //Opciones del menú
             System.out.println("\n" +
-                    "MENU");
-            System.out.println("" +
+                    "MENU Principal" + "\n###############");
+            System.out.println("\n" +
                     "Elija una opción: \n");
             System.out.println(
                     "1: Operaciones Aritmeticas \n" +
