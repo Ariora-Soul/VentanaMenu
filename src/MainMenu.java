@@ -1,6 +1,7 @@
 import AricmeticOperations.AricmeticOperationsMenu;
 import Conversors.ConversorsMenu;
 import GeometricFroms.GeometricFormsMenu;
+import GuessNumber.GuessNumberMenu;
 
 import java.util.Scanner;
 
@@ -19,10 +20,11 @@ public class MainMenu {
                     "1: Operaciones Aritmeticas \n" +
                             "2: Formas Geométricas\n" +
                             "3: Conversores\n" +
-                            "4: Salir\n");
+                            "4: Conversores\n" +
+                            "5: Salir\n");
 
             System.out.print("" +
-                    "Seleccione del 1 al 4: ");
+                    "Seleccione del 1 al 5: ");
             opcion = scanner.nextInt();
             switch (opcion){
                 case 1:
@@ -35,6 +37,9 @@ public class MainMenu {
                     ConversorsMenu.inicio(scanner);
                     break;
                 case 4:
+                    GuessNumberMenu.iniciar(scanner);
+                    break;
+                case 5:
                     System.out.println("Cerrando");
                     break;
                 default:
