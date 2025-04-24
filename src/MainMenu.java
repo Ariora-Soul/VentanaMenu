@@ -20,7 +20,7 @@ public class MainMenu {
                     "1: Operaciones Aritmeticas \n" +
                             "2: Formas Geométricas\n" +
                             "3: Conversores\n" +
-                            "4: Conversores\n" +
+                            "4: Adivinar\n" +
                             "5: Salir\n");
 
             System.out.print("" +
